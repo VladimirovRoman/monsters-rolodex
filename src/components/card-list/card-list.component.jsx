@@ -2,6 +2,7 @@ import { Component } from 'react';
 
 import './card-list.styles.css';
 import Card from '../card/card.component';
+
 class CardList extends Component {
 	render() {
 		const { monsters } = this.props;
@@ -9,9 +10,7 @@ class CardList extends Component {
 		return (
 			<div className='card-list'>
 				{monsters.map((monster) => {
-					return (
-						<Card id={monster.id} email={monster.email} name={monster.name} />
-					);
+					return <Card monster={monster} />;
 				})}
 			</div>
 		);
