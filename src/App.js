@@ -32,14 +32,13 @@ const App = () => {
 
 	return (
 		<div className='App'>
-			<h1 className='app-title'>Monsters Rolodex</h1>
+			<h1 className='app-title'>Monster rolodex</h1>
 
 			<SearchBox
 				placeholder='search-monsters'
 				className='monsters-search-box'
 				onChangeHandler={onSearchChange}
 			/>
-
 			<CardList monsters={filteredMonsters} />
 		</div>
 	);
